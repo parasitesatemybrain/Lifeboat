@@ -8,7 +8,8 @@ a:link {
 body{
 	margin: 0 auto;
 	background-image: url(images/background.gif);
-		padding-bottom: 75px
+		padding-bottom: 75px;
+			overflow-x: hidden;
 }
 
 #header{
@@ -49,9 +50,10 @@ max-height: 100%;
 #content{
 	margin: 0 auto;
 	min-height: 190px;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 	position: relative;
-width: 95%;
+    width: 95%;
 	min-width: 290px;
 	background-color: #dddddd;
 	top: 5%;
@@ -60,7 +62,8 @@ width: 95%;
 	-webkit-box-shadow: 10px 10px 5px #888;
 	box-shadow: 5px 5px 5px #444;
 	text-align: center;
-	padding-bottom: 10px
+	padding-bottom: 10px;
+	margin-top: 7px;
 
 }
 #content ul{
@@ -78,8 +81,10 @@ text-decoration: none;
 #flag{
 	margin: 0 auto;
 	width: 100%;
-	float: left;
+	float: center;
 	text-align: center;
+
+	background-repeat:no-repeat;
 }
 
 #indextext{
@@ -331,7 +336,17 @@ background-color: transparent;
 .mapsize{
 	margin-left: auto;
     margin-right: auto;
+	width:640px;
+	margin-bottom:-500px;
+	padding-left:5px;
+	
+	
     -webkit-transform: scale(0.48, 0.48);
+	
+	
+	
+	
+	
 	-moz-transform: scale(0.5, 2);
 	-o-transform: scale(0.5, 2);
 	transform: scale(0.5, 2);
@@ -344,10 +359,13 @@ background-color: transparent;
 -webkit-transform-origin:0px 0px; /* Safari and Chrome */
 -moz-transform-origin:0px 0px; /* Firefox */
 -o-transform-origin:0px 0px; /* Opera */
-transform-origin:0Spx 0px;
+transform-origin:0px 0px;
 -ms-transform-origin:0px 0px; /* IE 9 */
 
 } 
+.hkit{
+margin-bottom: -480px;
+}
 
 
 
