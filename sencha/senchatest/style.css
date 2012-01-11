@@ -1,0 +1,402 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a:link {
+	text-decoration: none
+}
+body{
+	margin: 0 auto;
+	background-image: url(images/background.gif);
+}
+
+#header{
+margin: 0 auto;
+float: top;
+height: 45px;
+position: relative;
+width: 100%;
+font: 14pt Ariel;
+font-family: sans-serif;
+padding-top: 10px;
+text-align: center;
+border: 1px solid #2A2A2A /*{a-bar-border}*/;
+background: #01326B /*{a-bar-background-color}*/;
+color: white /*{a-bar-color}*/;
+font-weight: bold;
+text-shadow: 0 /*{a-bar-shadow-x}*/ -1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ black /*{a-bar-shadow-color}*/;
+background-image: -webkit-gradient(linear, left top, left bottom, from( #0e2745 /*{a-bar-background-start}*/), to( #01326b /*{a-bar-background-end}*/));
+background-image: -webkit-linear-gradient(#0e2745 /*{a-bar-background-start}*/, #01326b /*{a-bar-background-end}*/);
+background-image: -moz-linear-gradient(#0e2745 /*{a-bar-background-start}*/, #01326b /*{a-bar-background-end}*/);
+background-image: -ms-linear-gradient(#0e2745 /*{a-bar-background-start}*/, #01326b /*{a-bar-background-end}*/);
+background-image: -o-linear-gradient(#0e2745 /*{a-bar-background-start}*/, #01326b /*{a-bar-background-end}*/);
+background-image: linear-gradient(#0e2745 /*{a-bar-background-start}*/, #01326b /*{a-bar-background-end}*/);
+border-image: initial;
+}
+#menu{
+margin: 0 auto;
+bottom: 0px;
+height: 65px;
+position: absolute;
+width: 100%;
+font: 14pt Ariel;
+font-family: sans-serif;
+text-align: center;
+border: 1px solid #a3a3a3 /*{a-bar-border}*/;
+background: #01326B /*{a-bar-background-color}*/;
+color: white /*{a-bar-color}*/;
+font-weight: bold;
+text-shadow: 0 /*{a-bar-shadow-x}*/ -1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ black /*{a-bar-shadow-color}*/;
+background-image: -webkit-gradient(linear, left top, left bottom, from( #a3a3a3 /*{a-bar-background-start}*/), to( #545454 /*{a-bar-background-end}*/));
+background-image: -webkit-linear-gradient(#a3a3a3 /*{a-bar-background-start}*/, #545454 /*{a-bar-background-end}*/);
+background-image: -moz-linear-gradient(#a3a3a3 /*{a-bar-background-start}*/, #545454 /*{a-bar-background-end}*/);
+background-image: -ms-linear-gradient(#a3a3a3 /*{a-bar-background-start}*/, #545454 /*{a-bar-background-end}*/);
+background-image: -o-linear-gradient(#a3a3a3 /*{a-bar-background-start}*/, #545454 /*{a-bar-background-end}*/);
+background-image: linear-gradient(#a3a3a3 /*{a-bar-background-start}*/, #545454 /*{a-bar-background-end}*/);
+border-image: initial;
+}
+
+/* <CONTENT> */
+
+#maincontainer{
+scroll: none;
+width: 100%;
+min-height: 300px;
+max-height: 100%;
+}
+
+#content{
+	margin: 0 auto;
+	min-height: 190px;
+	overflow: scroll;
+	position: relative;
+	width: 95%;
+	min-width: 290px;
+	background-color: #dddddd;
+	top: 5%;
+	border-radius: 15px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 5px 5px 5px #444;
+	text-align: center;
+}
+#content ul{
+text-decoration: none;
+}
+.title{
+	margin: 0 auto; 
+	font-size: 16pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #424242;
+}
+/* <INDEX> */
+
+#flag{
+	margin: 0 auto;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+#indextext{
+	width: 100%;
+	font-family: sans-serif;
+	color: #ffffff;
+	position: relative;
+	bottom: 30%;
+}
+/* </INDEX> */
+
+/* <CONTACTS> */
+#numbers{
+	text-decoration: none;
+	margin-top: 10px;
+	text-align: center;
+	margin: 0 auto;
+	height: 320px;
+	position: relative;
+	width: 284px;
+	left: 0px;
+	top: 25px;
+}
+.contacts{
+	margin-left: 300px;
+	padding-top: 10px;
+	margin: 0 auto; 
+	font-size: 11pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #424242;
+	height: 50px;
+	background-image: url(images/sprite.png);
+	background-position: -0px -783px;
+	background-repeat: no-repeat;
+}
+.contactinfo{
+	text-align: center;
+	margin: 0 auto; 
+	font-size: 8pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #424242;
+	height: 35px;
+}
+/* </CONTACTS> */
+
+/* <MCQ> */
+.mcq{
+	font-size: 14pt;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #424242;
+}
+#linkscontainer{
+	margin-top: 25px;
+}
+.mcqbutton{
+	text-align: center;
+	font-weight: bold;
+	margin: 0 auto;
+	margin-left: 6px;
+	font-family: sans-serif;
+	font-size: 10pt;
+	color: #424242;
+	width: 280px;
+	height: 50px;
+	/*background-image: url(images/sprite.png);*/
+	background-position: -0px -783px;
+	background-repeat: no-repeat;
+}
+.mcq-q{
+	text-align: center;
+	font-weight: bold;
+	margin-left: 6px;
+	font-family: sans-serif;
+	font-size: 18pt;
+	color: #424242;
+	width: 280px;
+	height: 100px;
+}
+.mcq-a{
+	text-align: center;
+	font-weight: bold;
+	margin: 0 auto;
+	margin-left: 6px;
+	font-family: sans-serif;
+	font-size: 10pt;
+	color: #424242;
+	width: 280px;
+	height: 62px;
+	background-image: url(images/sprite.png);
+	background-position: -0px -783px;
+	background-repeat: no-repeat;
+}
+#mcqanda{
+	font-size: 16pt;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #424242;	
+}
+#quizarea{
+	font-size: 14pt;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #424242;
+}
+
+/* </MCQ> */
+
+/* </CONTENT> */
+
+
+/* <MENU> */
+.menu{
+	position: fixed;
+	bottom: 0px;
+	
+}
+#menu ul{
+	width: 100%;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+}
+.menubutton{
+width:20%;
+}
+/* </MENU> */
+
+
+/* <QuizMe> */
+/*
+jQuizMe 2.1 - 12/15/09 Programmed and CopyWrited by Larry Battle 2008 - 2009 
+*/	
+
+radio{
+display: none;
+}
+
+.quiz-el{
+	font-style: bold;
+	font-size: 1em;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	position: relative;
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 100%;
+}
+.quiz-el div{
+	padding: 0.2em;
+}
+.quiz-el input{
+	font-size: 0.8em;
+}
+/* .q-innerArea = .q-header, .q-help, .q-prob, .q-intro, .q-gameOver */
+.q-innerArea{
+	position:relative;
+	clear: both;
+	color: black;
+}
+.q-header, .q-help, .q-review-menu {
+}
+.q-intro{
+	padding: 0.2em;
+}
+.q-title{
+	overflow: hidden;
+	width: 80%;
+	margin: 0;
+}
+/*This is a hack, because IE fails on float:right.*/
+.q-counter{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	margin: 1%;
+	padding: 0%;
+}
+.q-counter{
+	float: right;
+}
+.q-help{
+	position: relative;
+	clear:both;
+}
+/*.q-probArea = .q-ques, .q-ansSel, .q-result */
+.q-probArea{
+	border: none;
+	font-size: 1em;
+	position: relative;
+}
+.q-help-menu{
+	width: 97%;
+}
+.q-help-info{
+	clear:both;
+}
+.q-quit-area, .q-review-arrows{
+	display: inline;
+	width: auto;
+}
+.q-quit-area{
+	float: right;
+}
+.q-review-arrows{
+	position: relative;	/*IE hack.*/
+	width: 2.3em;
+}
+.q-center{
+	text-align: center;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.q-gameOver .q-statTotal{
+	color: blue;
+}
+.q-quesInput{
+	width: 95%;
+}
+.q-ol{
+	list-style-type: upper-alpha;
+	list-style-position: inside;
+	padding: 0;
+	margin: 0 auto;
+}
+ul, li {
+    list-style-type: none;
+}
+.q-ol-li{
+	padding-left: -20px;
+	margin: -2px;
+	width: 100%;
+	height: 40px;
+	background-image: url(images/sprite.png);
+	background-position: -0px -783px;
+	background-repeat: no-repeat;
+}
+.q-ol-hover{
+	background: #777777;
+}
+.q-ol-active{
+	background: black;
+	color: #ccffaa;
+}
+/*IE displays the wrong width for <select> tags.*/
+.q-select{
+	width : 80%;
+}
+.q-select{
+	font-size: 0.8em;
+	width: 100%;
+}
+.q-timer-area{
+	display:block; 
+	text-align:center;
+	width: 45px;
+}
+.q-review-menu{
+	text-align: center;
+	width: auto;
+}
+.q-reviewBar-btns{
+	position: relative;
+	display: inline-block;
+	width: 49%;
+}
+.q-rightArrow{
+	float:right;
+}
+.q-leftArrow{
+	float:left;
+}
+.q-timer-area{
+	width: auto;
+	line-height: 0;
+	height: auto;
+	background-color: #0000CD;
+}
+.q-radioBtn{
+	display: none;
+}
+
+/* </QuizMe> */
+
+input{
+background-color: transparent;
+}
+
+#disp{
+	color: #006400;
+	margin-left: 15px;
+	margin-top: 25px;
+	border: none;
+}
+
+.bagbtn{
+	text-align: center;
+	margin: 0 auto; 
+    padding:15px;
+	margin-top: 15px;
+}

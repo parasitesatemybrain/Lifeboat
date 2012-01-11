@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RNLI</title>
+<link rel="stylesheet" type="text/css" href="../style.css"/>
+<script type="text/javascript" src="scripts/stopwatch.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jQuizMe.js"></script>
+<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />	
+<link rel="apple-touch-icon" href="http://www.parasitesatemybrain.com/images/ICON.png">	
+<meta name="apple-mobile-web-app-capable" content="yes">	
+<link rel="apple-touch-startup-image" href="http://www.parasitesatemybrain.com/images/SPLASH.png">	
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body onload='stopwatch();'>
+	<div id="header" >Royal National Lifeboat Institution</div>
+	<div id="maincontainer">
+	<div id="content">
+	<div id="frame">
+	<div data-role="page">
+	<div id="triageArea"/>
+
+
+
+<script type="text/javascript">
+
+$(function times()
+{
+	$('#lap').show();
+});	
+
+ $(document).ready(
+        function () {
+           $('#lap').hide();
+            ss();
+        });
+
+$( function($){
+	var quizMulti = {
+    multiList:
+	[	
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 0<p/>Capillary Refill: 0", ans: "Dead", ansSel : [ "P1", "P2", "P3" ], image: "images/media/CS3.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Pain<p/>Breathing rate: 6 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/CS3.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Voice<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/CS3.JPG" },
+			{ ques: "Appearace: As Pic but edited to show patients face<p/>Response: Unresponsive<p/>Breathing rate: 0<p/>Capillary Refill: 0", ans: "Dead", ansSel : [ "P1", "P2", "P3" ], image: "images/media/CS4.JPG" },
+			{ ques: "Appearace: As Pic but edited to show patients face<p/>Response: Unresponsive<p/>Breathing rate:6 bpm<p/>Capillary Refill: 4 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/CS4.JPG" },
+			{ ques: "Appearace: As Pic but edited to show patients face<p/>Response: Pain<p/>Breathing rate: 30 bpm<p/>Capillary Refill: 4 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/CS4.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/CS6.JPG" },
+			{ ques: "Appearace: As Picture, pale and not wanting to move<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/CS6.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Voice<p/>Breathing rate: 30 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/CS6.JPG" },
+			{ ques: "Appearace: As Picture, fitting<p/>Response: Unresponsive<p/>Breathing rate: Unable to obtain<p/>Capillary Refill: Unable to obtain", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/ILL37.JPG" },
+			{ ques: "Appearace: As Picture, pale, not walking, holding chest<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/ILL36.JPG" },
+			{ ques: "Appearace: As Picture, pale, not walking, holding chest<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/ILL36.JPG" },
+			{ ques: "Appearace: As Picture, sitting<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/ILL40.JPG" },
+			{ ques: "Appearace: As Picture, standing tripod<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/ILL41.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Pain<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/ILL37.JPG" },
+			{ ques: "Appearace: As Picture, standing<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 1 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/ILL35.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 30 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/ILL30.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Pain<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/ILL30.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 0 bpm<p/>Capillary Refill: 0", ans: "Dead", ansSel : [ "P1", "P2", "P3" ], image: "images/media/ILL30.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Voice<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/ILL34.JPG" },
+			{ ques: "Appearace: As Picture, sitting<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/ILL32.JPG" },
+			{ ques: "Appearace: As Picture, walks up to you<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/ILL32.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ40.JPG" },
+			{ ques: "Appearace: As Picture, sat down, unable to move<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ41.JPG" },
+			{ ques: "Appearace: As Picture, approaches you<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ41.JPG" },
+			{ ques: "Appearace: As Picture, not walking<p/>Response: Alert<p/>Breathing rate: 36 bpm<p/>Capillary Refill: Unable to obtain", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ42.JPG" },
+			{ ques: "Appearace: As Picture, sitting<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: Unable to obtain", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ42.JPG" },
+			{ ques: "Appearace: As Picture, walking<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: Unable to obtain", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ42.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ43.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Voice<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ43.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Voice<p/>Breathing rate: 30 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ44.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 4 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ44.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ45.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 30 bpm<p/>Capillary Refill: 4 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ45.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 12 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ46.JPG" },
+			{ ques: "Appearace: As Picture, walks up to you<p/>Response: Alert<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ46.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 0 bpm<p/>Capillary Refill: 0 secs", ans: "Dead", ansSel : [ "P1", "P2", "P3" ], image: "images/media/INJ47.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Pain<p/>Breathing rate: 42 bpm<p/>Capillary Refill: Unable to obtain", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ47.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Voice<p/>Breathing rate: 6 bpm<p/>Capillary Refill: Unable to obtain", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ47.JPG" },
+			{ ques: "Appearace: As Picture, crying in pain<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: Unable to obtain", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ47.JPG" },
+			{ ques: "Appearace: As Picture, in lots of pain<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: Unable to obtain", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ42.JPG" },
+			{ ques: "Appearace: As Picture, able to walk<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ48.JPG" },
+			{ ques: "Appearace: As Picture, not wanting to walk<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ48.JPG" },
+			{ ques: "Appearace: As Picture, feels dizzy so not walking<p/>Response: Alert<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ48.JPG" },
+			{ ques: "Appearace: As Picture, walks up to you<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ49.JPG" },
+			{ ques: "Appearace: As Picture, walks up to you<p/>Response: Alert<p/>Breathing rate: 30 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ49.JPG" },
+			{ ques: "Appearace: As Picture, sitting<p/>Response: Voice<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ50.JPG" },
+			{ ques: "Appearace: As Picture, trapped<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ53.JPG" },
+			{ ques: "Appearace: As Picture, trapped<p/>Response: Alert<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ53.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 0 bpm<p/>Capillary Refill: 0", ans: "Dead", ansSel : [ "P1", "P2", "P3" ], image: "images/media/INJ57.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 6 bpm<p/>Capillary Refill: 4 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ57.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Pain<p/>Breathing rate: 42 bpm<p/>Capillary Refill: 4 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ57.JPG" },
+			{ ques: "Appearace: As Picture, walking<p/>Response: Alert<p/>Breathing rate: 12 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ58.JPG" },
+			{ ques: "Appearace: As Picture, sitting<p/>Response: Voice<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ58.JPG" },
+			{ ques: "Appearace: As Picture, sitting<p/>Response: Alert<p/>Breathing rate: 30 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ58.JPG" },
+			{ ques: "Appearace: As Picture, sitting<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ58.JPG" },
+			{ ques: "Appearace: As Picture, standing, looking dazed<p/>Response: Alert<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ58.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ62.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 30 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ62.JPG" },
+			{ ques: "Appearace: As Picture, walks up to you, in pain<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ63.JPG" },
+			{ ques: "Appearace: As Picture, sat on step, won't move<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ63.JPG" },
+			{ ques: "Appearace: As Picture, wandering<p/>Response: Alert<p/>Breathing rate: 30 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ64.JPG" },
+			{ ques: "Appearace: As Picture, sitting still<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ64.JPG" },
+			{ ques: "Appearace: As Picture, sitting<p/>Response: Voice<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ64.JPG" },
+			{ ques: "Appearace: As Picture, walks up to you<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ66.JPG" },
+			{ ques: "Appearace: As Picture, lying, does not want to move<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ66.JPG" },
+			{ ques: "Appearace: As Picture, not walking<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ69.JPG" },
+			{ ques: "Appearace: As Picture, standing holding hand<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ71.JPG" },
+			{ ques: "Appearace: As Picture, walking<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ73.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 0 bpm<p/>Capillary Refill: 0", ans: "Dead", ansSel : [ "P1", "P2", "P3" ], image: "images/media/INJ75.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 42 bpm<p/>Capillary Refill: 4 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ75.JPG" },
+			{ ques: "Appearace: As Picture, screaming in pain<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ76.JPG" },
+			{ ques: "Appearace: As Picture, not moving<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ77.JPG" },
+			{ ques: "Appearace: As Picture, standing<p/>Response: Alert<p/>Breathing rate: 12 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ78.JPG" },
+			{ ques: "Appearace: As Picture, sitting still<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ78.JPG" },
+			{ ques: "Appearace: As Picture, trapped<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ81.JPG" },
+			{ ques: "Appearace: As Picture, trapped<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 4 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ81.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ85.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 30 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ85.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ86.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Alert<p/>Breathing rate: 12 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ88.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Voice<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/INJ88.JPG" },
+			{ ques: "Appearace: As Picture, standing<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ87.JPG" },
+			{ ques: "Appearace: As Picture, sitting still<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ87.JPG" },
+			{ ques: "Appearace: As Picture, sitting<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/INJ88.JPG" },
+			{ ques: "Appearace: As Picture, walks up to you<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/INJ56.JPG" },
+			{ ques: "Appearace: Once rescued<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/IMM44.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 0 bpm<p/>Capillary Refill: 0", ans: "Dead", ansSel : [ "P1", "P2", "P3" ], image: "images/media/IMM42.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Pain<p/>Breathing rate: 6 bpm<p/>Capillary Refill: 4 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/IMM42.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/IMM42.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 0 bpm<p/>Capillary Refill: 0", ans: "Dead", ansSel : [ "P1", "P2", "P3" ], image: "images/media/IMM36.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Voice<p/>Breathing rate: 36 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/IMM36.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 6 bpm<p/>Capillary Refill: 3 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/IMM36.JPG" },
+			{ ques: "Appearace: As Picture, walking<p/>Response: Alert<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/IMM45.JPG" },
+			{ ques: "Appearace: As Picture, sitting<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/IMM45.JPG" },
+			{ ques: "Appearace: As Picture, walking<p/>Response: Alert<p/>Breathing rate: 12 bpm<p/>Capillary Refill: 1 secs", ans: "P3", ansSel : [ "P1", "P2", "Dead" ], image: "images/media/IMM41.JPG" },
+			{ ques: "Appearace: As Picture, not walking<p/>Response: Alert<p/>Breathing rate: 18 bpm<p/>Capillary Refill: 2 secs", ans: "P2", ansSel : [ "P1", "P3", "Dead" ], image: "images/media/IMM41.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Unresponsive<p/>Breathing rate: 0 bpm<p/>Capillary Refill: 0", ans: "Dead", ansSel : [ "P1", "P2", "P3" ], image: "images/media/IMM40.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Pain<p/>Breathing rate: 42 bpm<p/>Capillary Refill: 4 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/IMM40.JPG" },
+			{ ques: "Appearace: As Picture<p/>Response: Voice<p/>Breathing rate: 24 bpm<p/>Capillary Refill: 2 secs", ans: "P1", ansSel : [ "P2", "P3", "Dead" ], image: "images/media/IMM40.JPG" },
+	]
+		};
+			
+	options = {
+		showHTML: true,
+		animationType: 0,
+		showWrongAns: true,
+		title: "Triage"
+};
+
+$("#triageArea").jQuizMe(quizMulti, options);
+});
+</script>
+<div id="clock" >
+	<input id="disp" type="text" maxlength=12 readonly/>
+	
+<div id="lap">.</div>
+</div>
+
+
+<!--<input type="button" value="next" id="nextbutt" onclick="ss(), ss()"/> -->
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="menu" class="menu">
+	<ul>
+		<a href="mcq.html"><li id="mcqbutton" class="menubutton"><img src="images/quizicon_sml.png"/></li></a>
+		<a href="triage.html"><li id="triagebutton" class="menubutton"><img src="images/triageicon_sml.png"/></li></a>
+		<a href="pat.html"><li id="patbutton" class="menubutton"><img src="images/assessmenticon_sml.png"/></li></a>
+		<a href="kit/kit-home.html"><li id="kitbutton" class="menubutton"><img src="images/bagicon_sml.png"/></li></a>
+		<a href="numbers.html"><li id="numbersbutton" class="menubutton"><img src="images/infoicon_sml.png"/></li></a>
+	</ul>
+</div>
+</body>
+</html>
