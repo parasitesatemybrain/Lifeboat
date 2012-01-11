@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RNLI</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+<!--  Home screen icon  -->
+<link rel="apple-touch-icon" href="http://s-dev.co.uk/RNLI/images/ICON.png">
+
+<!--  Make App Full screen  -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--  Splash Screen retina 640X960 NON retina 320X460 -->
+<link rel="apple-touch-startup-image" href="http://s-dev.co.uk/RNLI/images/SPLASH.png">
+
+<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />
+<!--  Status bar colour -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	</head>
+<body>
+<!-- declare show hide js //-->
+<script type="text/javascript">
+// Andy Langton's show/hide/mini-accordion - updated 23/11/2009
+// Latest version @ http://andylangton.co.uk/jquery-show-hide
+ 
+// this tells jquery to run the function below once the DOM is ready
+$(document).ready(function() {
+ 
+// choose text for the show/hide link - can contain HTML (e.g. an image)
+var showText='<li class="button" alt="show"></li>';
+var hideText='<li class="button" alt="hide"/>';
+ 
+// initialise the visibility check
+var is_visible = false;
+ 
+// append show/hide links to the element directly preceding the element with a class of "toggle"
+$('.toggle').prev().append('<a href="#" class="toggleLink">'+showText+'</a>');
+ 
+// hide all of the elements with a class of 'toggle'
+$('.toggle').hide();
+
+ 
+// capture clicks on the toggle links
+$('a.toggleLink').click(function() {
+ 
+// switch visibility
+is_visible = !is_visible;
+ 
+// change the link depending on whether the element is shown or hidden
+$(this).html( (!is_visible) ? showText : hideText);
+ 
+// toggle the display - uncomment the next line for a basic "accordion" style
+//$('.toggle').hide();$('a.toggleLink').html(showText);
+$(this).parent().next('.toggle').toggle('slow');
+ 
+// return false so any link destination is not followed
+return false;
+ 
+});
+});
+//js ref from---http://andylangton.co.uk/articles/javascript/jquery-show-hide-multiple-elements/
+</script>
+
+<div id="header"></div>
+<div id="content">
+
+<div id="kitbag">
+
+
+
+
+<div data-role="page">
+<ul id="title" class="title">Stretcher</ul>
+<ul id="titletxt" class="buttontxt">Please select the streture you require </ul>
+
+<lh  class="toggleLink">Orange basket stretcher</lh>
+<ul class="toggle" style="display: block; ">
+<ul id="titletxt" class="buttontxt">Use of the Orange Basket stretcher </ul>
+<li class="pic"><img src="images/kit/k34.png" alt="k34" width="300" height="150" /></li>
+<li class="text">
+<p>• Optimal stretcher for extracting a casualty with a suspected spinal
+injury.</p>
+<p>• Can be carried from the sides or from either end.</p>
+<p>• The Neil Robertson stretcher and Ambulance Pouch can be fitted
+inside if further transportation is required.</p>
+</li>
+<br></br>
+<li class="list">Saftey</li>
+<li class="text">
+<p>• Ensure the straps are secure before lifting:</p>
+<p>MAKE SURE CASUALTY CAN BREATHE.</p>
+<p>• CANNOT be airlifted by HELO if airlift is required.</p>
+<p>• REMEMBER: TALK to the casualty and explain what you’re doing.</p>
+</li>
+<br></br>
+<li class="list">How to use</li>
+<li class="text">
+<p>Lay the OB beside casualty, ensure the straps are secured in the elastic loops.  Log roll the casualty, holding their head at all times. Place the stretcher as close to the casualty’s back as possible with their head 2-3 inches from top of the stretcher.  Scoop the casualty into the stretcher and lower to the floor.</p></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/1.jpg" alt="1" width="300" height="150" /></li>
+<li class="text">
+<p>Lift the casualty’s feet into the stretcher. </p></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/2.jpg" alt="1" width="300" height="150" /></li>
+<li class="text">
+<p>Scoop the casualty into the stretcher and lower to the floor. </p></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/3.jpg" alt="1" width="300" height="150" /></li>
+<li class="text">
+<p>Slide the casualty into the stretcher. Several controlled moves may need to be made.
+ </p></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/4.jpg" alt="1" width="300" height="150" /></li>
+<li class="text">
+<p>Secure the colour coded straps. Consider injuries, may need diagonal strapping and or padding. Top black strap should be under casualty’s armpits. Use a figure  of 8 to secure feet. Tighten all the straps by feeding through. </p></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/5.jpg" alt="1" width="300" height="150" /></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/6.jpg" alt="1" width="300" height="150" /></li>
+<li class="text">
+<p>Secure the casualty’s head with the head blocks, both blocks should be put in at same time.  Immobilise the head at all times. </p></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/7.jpg" alt="1" width="300" height="150" /></li>
+<li class="text">
+<p> Secure the head using the black strap (photo 8). If this is not possible then velcro and rolled blankets can be used. </p></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/8.jpg" alt="1" width="300" height="150" /></li>
+<li class="text">
+<p>Lift the stretcher from the sides or from the ends. </p></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/9.jpg" alt="1" width="300" height="150" /></li>
+<li class="text">
+<p> 
+The stretcher can be lifted using a Lifting Bridle. Ensure the carabiners go through the metal eyes. The straps then attach to the central carabiner.
+ </p></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/10.jpg" alt="1" width="300" height="150" /></li>
+<li class="text">
+<p> </p></li>
+<br></br>
+<li class="pic"><img src="images/kit/stretcher/11.jpg" alt="1" width="300" height="150" /></li>
+<li class="text">
+<p> </p></li>
+<li class="text">
+<p> </p></li>
+
+
+</li>
+</ul>
+
+
+
+
+
+
+
+<lh  class="toggleLink">Other stretcher</lh>
+<ul class="toggle" style="display: block; ">
+<li class="list"><a href="#">ILB Kit</a></li>
+<li class="list"><a href="#">Oxygen</a></li>
+<li class="list"><a href="#">Stretcher</a></li>
+</ul>
+
+
+</div><!-- /page -->
+
+
+
+
+
+</div>
+<div id=""></div>
+<div id=""></div>
+<div id=""></div>
+<div id=""></div>
+
+
+
+
+
+</div>
+<div id="menu" class="menu">
+	<ul>
+		<a href="../mcq.html"><li id="mcqbutton" class="menubutton"></li></a>
+		<a href="../triage.html"><li id="triagebutton" class="menubutton"></li>
+		<a href="../pat.html"><li id="patbutton" class="menubutton"></li>
+		<a href="kitbag.html"><li id="kitbutton" class="menubutton"></li>
+		<a href="../numbers.html"><li id="numbersbutton" class="menubutton"></li>
+	</ul>
+</div>
+</body>
+</html>

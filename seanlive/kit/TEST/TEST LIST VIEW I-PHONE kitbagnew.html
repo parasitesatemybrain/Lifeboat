@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RNLI</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+
+<!--  Home screen icon  -->
+<link rel="apple-touch-icon" href="http://s-dev.co.uk/RNLI/images/ICON.png">
+
+<!--  Make App Full screen  -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--  Splash Screen retina 640X960 NON retina 320X460 -->
+<link rel="apple-touch-startup-image" href="http://s-dev.co.uk/RNLI/images/SPLASH.png">
+
+<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />
+<!--  Status bar colour -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	</head>
+<body>
+<!-- declare show hide js //-->
+<script type="text/javascript">
+// Andy Langton's show/hide/mini-accordion - updated 23/11/2009
+// Latest version @ http://andylangton.co.uk/jquery-show-hide
+ 
+// this tells jquery to run the function below once the DOM is ready
+$(document).ready(function() {
+ 
+// choose text for the show/hide link - can contain HTML (e.g. an image)
+var showText='<li class="button" alt="show"></li>';
+var hideText='<li class="button" alt="hide"/>';
+ 
+// initialise the visibility check
+var is_visible = false;
+ 
+// append show/hide links to the element directly preceding the element with a class of "toggle"
+$('.toggle').prev().append('<a href="#" class="toggleLink">'+showText+'</a>');
+ 
+// hide all of the elements with a class of 'toggle'
+$('.toggle').hide();
+
+ 
+// capture clicks on the toggle links
+$('a.toggleLink').click(function() {
+ 
+// switch visibility
+is_visible = !is_visible;
+ 
+// change the link depending on whether the element is shown or hidden
+$(this).html( (!is_visible) ? showText : hideText);
+ 
+// toggle the display - uncomment the next line for a basic "accordion" style
+//$('.toggle').hide();$('a.toggleLink').html(showText);
+$(this).parent().next('.toggle').toggle('slow');
+ 
+// return false so any link destination is not followed
+return false;
+ 
+});
+});
+//js ref from---http://andylangton.co.uk/articles/javascript/jquery-show-hide-multiple-elements/
+</script>
+
+<div id="header"></div>
+<div id="content">
+
+<div id="kitbag">
+
+
+
+
+<div data-role="page">
+<ul id="title" class="title">Kit bags</ul>
+<ul id="titletxt" class="buttontxt">Choose your crew type, And select the kit you would like to know more about </ul>
+
+<lh  class="toggleLink">All weather lifeboat crew</lh>
+<ul class="toggle" style="display: block; ">
+<li class="list"><a href="#">ALB Kit</a></li>
+<li class="list"><a href="#">ILB Kit</a></li>
+<li class="list"><a href="#">Oxygen</a></li>
+<li class="list"><a href="#">Entonox</a></li>
+<a href="stretcher.html"><li class="list">Stretcher</li></a>
+</ul>
+<lh  class="toggleLink">In shore lifeboat crew</lh>
+<ul class="toggle" style="display: block; ">
+<li class="list"><a href="#">ILB Kit</a></li>
+<li class="list"><a href="#">Oxygen</a></li>
+<li class="list"><a href="#">Stretcher</a></li>
+</ul>
+<lh  class="toggleLink">Thames lifeboat crew</lh>
+<ul class="toggle" style="display: block; ">
+<li class="list"><a href="#">Thames Kit</a></li>
+<li class="list"><a href="#">Entanox</a></li>
+<li class="list"><a href="#">Stretcher</a></li>
+</ul>
+<lh  class="toggleLink">Lifeguard</lh>
+<ul class="toggle" style="display: block; ">
+<li class="list"><a href="#">Lifeguard Kit</a></li>
+<li class="list"><a href="#">Stretcher</a></li>
+<li class="list"><a href="#">Entanox</a></li>
+</ul>
+
+</div><!-- /page -->
+
+
+
+
+
+</div>
+<div id=""></div>
+<div id=""></div>
+<div id=""></div>
+<div id=""></div>
+
+
+
+
+
+</div>
+<div id="menu" class="menu">
+	<ul>
+		<a href="../mcq.html"><li id="mcqbutton" class="menubutton"></li></a>
+		<a href="../triage.html"><li id="triagebutton" class="menubutton"></li>
+		<a href="../pat.html"><li id="patbutton" class="menubutton"></li>
+		<a href="kitbag.html"><li id="kitbutton" class="menubutton"></li>
+		<a href="../numbers.html"><li id="numbersbutton" class="menubutton"></li>
+	</ul>
+</div>
+</body>
+</html>

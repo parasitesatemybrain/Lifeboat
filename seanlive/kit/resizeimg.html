@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<!-- =======================================================================-->
+<head>
+
+   <meta http-equiv="Content-Language" content="en" />
+   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+
+   <meta name="description" content="Dynamically resizing and changing HTML images "/>
+   <meta name="author" content="John S. Urban">
+   <meta name="date" content="2009-01-09">
+   <meta name="copyright" content="© 2009, John S. Urban; you may use as you wish.">
+   <meta name="keywords" content="IMG, Image Maps, resize, HTML5">
+   <meta name="generator" content="vi/vim" />
+
+  <title>Simple Scalable Image</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+<!-- =======================================================================-->
+<style type="text/css">
+/*<![CDATA[*/
+p.big {
+      font-size:  1000pt;
+      margin:     0;
+      padding:    0;
+      border:     0;
+}
+/*]]>*/
+</style>
+<!-- =======================================================================-->
+<script type="text/javascript" src="../scripts/maprs.js"></script>
+<script type="text/javascript" src="../scripts/winrs.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+</head>
+<!-- =======================================================================-->
+
+<body onload="getglobal();" >
+<form>
+   <input type="button" onclick="scaleXY('myimage',1.0/1.13);" value="scaled smaller" />
+   <input type="button" onclick="scaleXY('myimage',1.13);" value="scaled bigger" />
+</form>
+  <div>
+    <img id="myimage" src="hcopy.gif" alt="Round buttons" usemap="#circles" height="100" width="100" />
+    <map id="circles" name="circles" >
+
+      <area target="_blank" title="CYAN AREA" alt="CYAN" shape="circle" coords="50,50,20" href="#CYAN" />
+      <area target="_blank" title="BLUE AREA" alt="BLUE" shape="circle" coords="25,25,20" href="#BLUE" />
+      <area target="_blank" title="RED AREA" alt="RED" shape="circle" coords="25,75,20" href="#RED" />
+      <area target="_blank" title="MAGENTA AREA" alt="MAGENTA" shape="circle" coords="75,25,20" href="#MAGENTA" />
+      <area target="_blank" title="GREEN AREA" alt="GREEN" shape="circle" coords="75,75,20" href="#GREEN" />
+      <area target="_blank" title="YELLOW AREA" alt="YELLOW" shape="rect" coords="0,0,100,100" href="#YELLOW" />
+
+    </map>
+</div>
+
+<span id="desc2"> </span>
+
+<h1>Dynamically Rescaling an Image Map</h1>
+<p>
+  This example makes a lot of assumptions (it assumes one image map per
+  document and that coordinates in the coords= properties are comma-delimited,
+  and that the same scaling factor is applied for the width and height,
+  for example). Even so, it shows it is possible to remap the coordinates. No matter
+  what size you make the map the colored regions continue to point to the correct URL.
+</div>
+
+</p>
+<p>
+<blockquote>
+    John S. Urban, Feb 23, 2008
+</blockquote>
+<hr>
+
+<a  id="BLACK"    name="BLACK"    >  BLACK    </a>  <p  style="color:black    ;background-color:black;    "  class="big"  >  .<br>.<br>.<br>.<br>.<br>.  </p>
+<a  id="CYAN"     name="CYAN"     >  CYAN     </a>  <p  style="color:cyan     ;background-color:cyan;     "  class="big"  >  .<br>.<br>.<br>.<br>.<br>.  </p>
+<a  id="BLUE"     name="BLUE"     >  BLUE     </a>  <p  style="color:blue     ;background-color:blue;     "  class="big"  >  .<br>.<br>.<br>.<br>.<br>.  </p>
+<a  id="RED"      name="RED"      >  RED      </a>  <p  style="color:red      ;background-color:red;      "  class="big"  >  .<br>.<br>.<br>.<br>.<br>.  </p>
+<a  id="MAGENTA"  name="MAGENTA"  >  MAGENTA  </a>  <p  style="color:magenta  ;background-color:magenta;  "  class="big"  >  .<br>.<br>.<br>.<br>.<br>.  </p>
+<a  id="GREEN"    name="GREEN"    >  GREEN    </a>  <p  style="color:green    ;background-color:green;    "  class="big"  >  .<br>.<br>.<br>.<br>.<br>.  </p>
+<a  id="YELLOW"   name="YELLOW"   >  YELLOW   </a>  <p  style="color:yellow   ;background-color:yellow;   "  class="big"  >  .<br>.<br>.<br>.<br>.<br>.  </p>
+<!--
+-->
+
+<a href="../index.html"><img src="../images/ju.gif" class="c1" width="17" height="22" style="position:absolute;left:0;top:0;"/></a>
+</body>
+</html>
