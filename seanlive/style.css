@@ -153,6 +153,7 @@ display: none;
 }
 .quiz-el div{
 	padding: 0.2em;
+	margin: 0 auto;
 }
 .quiz-el input{
 	font-size: 0.8em;
@@ -162,6 +163,7 @@ display: none;
 	position:relative;
 	clear: both;
 	color: black;
+	margin: 0 auto;
 }
 .q-header, .q-help, .q-review-menu {
 }
@@ -232,10 +234,68 @@ display: none;
 ul, li {
     list-style-type: none;
 }
+/*input.q-check-btn{
+	background-color: #a5b8da;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5b8da), color-stop(100%, #7089b3));
+	background-image: -webkit-linear-gradient(top, #a5b8da, #7089b3);
+	background-image: -moz-linear-gradient(top, #a5b8da, #7089b3);
+	background-image: -ms-linear-gradient(top, #a5b8da, #7089b3);
+	background-image: -o-linear-gradient(top, #a5b8da, #7089b3);
+	background-image: linear-gradient(top, #a5b8da, #7089b3);
+	border-top: 1px solid #758fba;
+	border-right: 1px solid #6c84ab;
+	border-bottom: 1px solid #5c6f91;
+	border-left: 1px solid #6c84ab;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	-ms-border-radius: 18px;
+	-o-border-radius: 18px;
+	border-radius: 18px;
+	-webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+	-moz-box-shadow: inset 0 1px 0 0 #aec3e5;
+	-ms-box-shadow: inset 0 1px 0 0 #aec3e5;
+	-o-box-shadow: inset 0 1px 0 0 #aec3e5;
+	box-shadow: inset 0 1px 0 0 #aec3e5;
+	color: #fff;
+	font: bold 11px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	line-height: 1; 
+	padding: 8px 0;
+	text-align: center;
+	text-shadow: 0 -1px 1px #64799e;
+	text-transform: uppercase;
+	width: 150px; }
+	input.q-check-btn:hover {
+    background-color: #9badcc;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9badcc), color-stop(100%, #687fa6));
+    background-image: -webkit-linear-gradient(top, #9badcc, #687fa6);
+    background-image: -moz-linear-gradient(top, #9badcc, #687fa6);
+    background-image: -ms-linear-gradient(top, #9badcc, #687fa6);
+    background-image: -o-linear-gradient(top, #9badcc, #687fa6);
+    background-image: linear-gradient(top, #9badcc, #687fa6);
+    border-top: 1px solid #6d86ad;
+    border-right: 1px solid #647a9e;
+    border-bottom: 1px solid #546685;
+    border-left: 1px solid #647a9e;
+    -webkit-box-shadow: inset 0 1px 0 0 #a5b9d9;
+    -moz-box-shadow: inset 0 1px 0 0 #a5b9d9;
+    -ms-box-shadow: inset 0 1px 0 0 #a5b9d9;
+    -o-box-shadow: inset 0 1px 0 0 #a5b9d9;
+    box-shadow: inset 0 1px 0 0 #a5b9d9;
+    cursor: pointer; }
+	input.q-check-btn:active {
+    border: 1px solid #546685;
+    -webkit-box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eeeeee;
+    -moz-box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eeeeee;
+    -ms-box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eeeeee;
+    -o-box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eeeeee; }
+}
+*/
 .q-ol-li{
+	margin: 0 auto;
 	padding-left: -20px;
-	margin: -2px;
-	width: 280px;
+	margin-top: 20px;
+	width: 100%;
 	height: 40px;
 	background-image: url(images/sprite.png);
 	background-position: -0px -783px;
@@ -393,18 +453,17 @@ text-shadow: 0 /*{a-bar-shadow-x}*/ -1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shado
 /* </KIT> */
 
 /* <MENU> */
-.menu{
-	
-	bottom: 0px;
-	height: 50px; 
-}
 
+.menu{
+	position: fixed;
+	bottom: 0px;
+	
+}
 #menu ul{
 	width: 100%;
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
-	overflow: hidden;
 }
 
 #menu{
@@ -427,37 +486,15 @@ background-image: -moz-linear-gradient(#a3a3a3 /*{a-bar-background-start}*/, #54
 background-image: -ms-linear-gradient(#a3a3a3 /*{a-bar-background-start}*/, #545454 /*{a-bar-background-end}*/);
 background-image: -o-linear-gradient(#a3a3a3 /*{a-bar-background-start}*/, #545454 /*{a-bar-background-end}*/);
 background-image: linear-gradient(#a3a3a3 /*{a-bar-background-start}*/, #545454 /*{a-bar-background-end}*/);
-border-image: initial;
 }
 
-#mcqbutton{
-
-	background-repeat: no-repeat;
-	width: 75px;
+#menu li{
+	text-decoration: none;
+	display: inline-block;
+	width: 15%;
+	position: relative;
+	height: 65px;
 	overflow: hidden;
 }
-#triagebutton{
 
-	background-repeat: no-repeat;
-	width: 55px;
-	overflow: hidden;
-}
-#patbutton{
-
-	background-repeat: no-repeat;
-	width: 109px;
-	overflow: hidden;
-}
-#kitbutton{
-
-	background-repeat: no-repeat;
-	width: 65px;
-	overflow: hidden;
-}
-#numbersbutton{
-
-	background-repeat: no-repeat;
-	width: 65px;
-	overflow: hidden;
-}
 /* </MENU> */

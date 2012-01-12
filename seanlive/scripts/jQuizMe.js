@@ -48,7 +48,7 @@
 			$("<div/>").addClass( "q-ques q-probArea"),
 			$("<div/>").addClass( "q-ans q-probArea").append(
 					$( "<div/>" ).addClass( "q-ansSel" ),
-					$( "<input type='button' onclick='ss(), ss()'/>" ).addClass( "q-check-btn" )
+					$( "<input type='button'" ).addClass( "q-check-btn" )
 				),
 			$("<div/>").addClass( "q-result q-probArea" ).hide() 
 		),

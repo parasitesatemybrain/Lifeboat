@@ -21,13 +21,13 @@
 					$( "<input type='button'/>" ).addClass( "q-quitYes-btn q-quit-confirm" ).hide(),
 					$( "<input type='button'/>" ).addClass( "q-quitNo-btn q-quit-confirm" ).hide()
 				),
-				$("<input type='button'/>").addClass( "q-help-btn" ),									
+				$("<input type='button'/>").addClass( "q-help-btn" ).hide(),									
 				$( "<span/>" ).addClass( "q-timer-area" ),
-				$("<div/>").addClass( "q-help-info" ).hide()
+				$("<div/>").addClass( "q-help-info" ).show()
 			)
 		),
 		$("<div/>").addClass( "q-review-menu q-innerArea").append( 
-			$("<input type='button' onClick='times();'/>").addClass( "q-details-btn q-reviewBar-btns" ),
+			$("<input type='button'/>").addClass( "q-details-btn q-reviewBar-btns" ),
 			$("<input type='button'/>").addClass( "q-review-btn q-reviewBar-btns" ),
 			$("<div/>").addClass( "q-reviewBar q-innerArea").append(
 				$("<input type='button'/>").attr({ "class": "q-leftArrow q-review-arrows", "value": "<-" }),
@@ -247,7 +247,8 @@
 			},
 			disableMenuBar = function(){
 				$( ".q-quit-btn, .q-help-btn", currQuiz ).attr( "disabled", true );
-				$( ".q-help-info" ).hide();
+				$( ".q-help-info" ).show();
+				$( ".q-help-btn" ).hide();
 			},
 			// setCheckBtn(): Sets the check button to toggle from "check" to "next". Or just displays "next".
 			// "check" shows the answer results, but "next" just changes the question.
